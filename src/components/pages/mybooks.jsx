@@ -102,16 +102,16 @@ export default function MyBooks({ user }) {
 								<div className="book-card-right">
 									{(() => {
 										const raw = b.status;
-										const normalized = raw ? raw.toLowerCase() : null;
+										const normalized = raw
+											? String(raw).toLowerCase().replace(/[^a-z0-9]/g, "")
+											: null;
 										const mapping = {
 											checkedin: "Checked In",
-											checkedIn: "Checked In",
 											waiting: "Waiting",
 											inprogress: "In Progress",
-											"in-progress": "In Progress",
 										};
-										const label = normalized ? mapping[normalized] || raw : "New feature update";
-										const cls = normalized ? normalized.replace(/\s+/g, "") : "feature-update";
+										const label = normalized ? mapping[normalized] || raw : "Scheduled";
+										const cls = normalized || "unknown";
 										return (
 											<span className={`status ${cls}`}>
 												{label}
