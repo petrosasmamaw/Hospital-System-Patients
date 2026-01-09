@@ -10,6 +10,7 @@ import MyReports from "./components/pages/myreports.jsx";
 import Login from "./components/pages/login.jsx";
 import Register from "./components/pages/register.jsx";
 import Navbar from "./components/pages/navbar.jsx";
+import Footer from "./components/pages/Footer.jsx";
 import Profile from "./components/pages/profile.jsx";
 import DoctorBook from "./components/pages/doctorbook.jsx";
 import MySpecificReports from "./components/pages/myspecificreport.jsx";
@@ -69,6 +70,7 @@ function AppInner() {
 			<main style={{ padding: 20 }}>
 				<AppRoutes user={user} />
 			</main>
+			<Footer />
 		</div>
 	);
 }

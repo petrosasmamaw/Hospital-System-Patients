@@ -10,7 +10,7 @@ import reportImg from "../../assets/report.jpg";
 export default function MySpecificReports({ user }) {
 	const dispatch = useDispatch();
 	const [searchParams] = useSearchParams();
-
+	
 	// ✅ ONLY doctorId comes from URL
 	const doctorId =
 		searchParams.get("doctorId") ||
