@@ -40,7 +40,7 @@ export default function Home() {
       >
         <img src={hospitalMain} alt="Hospital Main" />
         <div className="hero-content">
-          <h1>Smart Healthcare for Everyone</h1>
+          <h1>Dengel Hospital -Smart Healthcare for Everyone</h1>
           <p>
             Book appointments, consult doctors, manage reports, and receive
             emergency care — all in one platform.

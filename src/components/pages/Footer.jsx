@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="page footer-grid">
         <div className="footer-col">
-          <h3>Patient Portal</h3>
+          <h3>Dengel Patient's Portal</h3>
           <p className="muted">Access your bookings, reports and profile information securely.</p>
           <p className="muted" style={{ marginTop: 8 }}>Version 1.0 • Patient interface</p>
         </div>
