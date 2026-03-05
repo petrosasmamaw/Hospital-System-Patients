@@ -20,10 +20,8 @@ export default function Navbar({ user }) {
 	const navItems = [
 		{ to: "/", label: "Home", icon: "🏠" },
 		{ to: "/doctors", label: "Doctors", icon: "🩺" },
-		{ to: "/doctor", label: "Book Doctor", icon: "📅" },
 		{ to: "/mybooks", label: "My Books", icon: "📘" },
 		{ to: "/myreports", label: "My Reports", icon: "📊" },
-		{ to: "/myspecificreports", label: "Specific Report", icon: "🧾" },
 		{ to: "/profile", label: "My Profile", icon: "👤" },
 	];
 
